@@ -35,6 +35,10 @@ Plugin 'pangloss/vim-javascript'
 
 Plugin 'jparise/vim-graphql'
 
+Plugin 'yggdroot/indentline'
+
+Plugin 'ctrlpvim/ctrlp.vim'
+
 call vundle#end()
 filetype plugin indent on
 
@@ -58,3 +62,14 @@ let g:move_key_modifier = 'C'
 "Vimtex
 
 let g:tex_flavor='latex'
+
+"Unite
+
+nnoremap <leader>f :<C-u>Unite -tab file<CR>
+
+"indentline
+
+let g:indentLine_enabled = 0
+let g:indentLine_color_term = 240
+let g:indentLine_leadingSpaceEnabled = 1
+let g:indentLine_leadingSpaceChar = '.'
